@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Ranco';
+    src: url('BoycotRancoExtrude-gwlY5.otf');
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99.9vh;
+    margin: 0;
+}
+
+#seccion1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#seccion1 > h1 {
+    font-size: 5em;
+    margin-bottom: 0;
+    font-family: 'Ranco';
+    animation: aparecerh1 2s linear forwards;
+    color: white;
+}
+
+#seccion1 > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    animation: aparecerh2 3s linear forwards;
+    color: white;
+}
+
+#seccion1 > button {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid white;
+    height: 10vh;
+    width: 15vw;
+    font-size: 2em;
+    cursor: pointer;
+    animation: aparecerboton 4s linear forwards;
+    transition: background-color 2s, color 2s;
+}
+
+#seccion1 > button:hover {
+    background-color: rgb(255, 255, 255, .6);
+    color: black;
+}
+
+#seccion2 {
+    display: none;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+#seccion2.visible {
+    display: flex;
+}
+
+#seccion2 > div {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+    text-align: right;
+}
+
+#seccion2 > div > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    display: block;
+    margin-right: 10px;
+    text-align: right;
+    margin-top: .5%;
+    cursor: pointer;
+}
+
+@keyframes aparecerh1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerh2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerboton {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
